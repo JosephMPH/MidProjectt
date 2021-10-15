@@ -31,9 +31,70 @@ body {
 	overflow: hidden;
 }
 
+.small-img-row {
+  display: flex;
+  background: #538f94;
+  margin: 20px 0;
+  align-items: center;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.small-img {
+  position: relative ;
+}
+
+.small-img img{
+  height: 130px;
+}
+
+.small-img-row p{
+  margin-left: 20px;
+  color: #f1f1f1;
+  line-height: 22px;
+  font-size: 15px;
+}
+
+.play-btn{
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+
+.small-img .play-btn{
+  width: 40%;
+  height: 40%;
+}
+
+.video-player{
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+  display: none;
+}
+
+video:focus{
+  outline: none;
+}
+
+.close-btn{
+  position:absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  cursor: pointer;
+}
+
 .brbig{
 	display: block;
-	margin-bottom: 2em;
+	margin-bottom: 0.5em;
 }
 
 .overlay {

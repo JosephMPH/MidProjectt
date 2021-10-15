@@ -25,19 +25,50 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 </script>
-
-<span class="brbig"></span>
-
+<script src="button.js"></script>
 <div class="container">
 	<h1>How To Make Video Gallery</h1>
 	<div class="row">
 		<div class="col">
 			<div class="feature-img">
-				<img src="test.png" width="100%">
+				<img src="internet.jpg" width="100%">
+				<img src="play_btn.png" class="play-btn" onclick="playVideo('internet.mp4')">
 			</div>
 		</div>
+		<div class="col">
+			<div class="small-img-row">
+				<div class="small-img">
+					<img src="ajax.jpg" width="100%">
+					<img src="play_btn.png" class="play-btn" onclick="playVideo('ajax.mp4')">
+				</div>
+				<p>1: How to Get Started With AJAX | AJAX Tutorial For Beginners | Learn AJAX | PHP | JavaScript</p>
+			</div>
+			<div class="small-img-row">
+				<div class="small-img">
+					<img src="css.jpg" width="100%" >
+					<img src="play_btn.png" class="play-btn" onclick="playVideo('css.mp4')">
+				</div>
+				<p>Web Development: Intro to CSS</p>
+			</div>
+			<div class="small-img-row">
+				<div class="small-img">
+					<img src="html.jpg" width="100%">
+					<img src="play_btn.png" class="play-btn" onclick="playVideo('html.mp4')">
+				</div>
+				<p>Belajar HTML untuk pemula - intro</p>
+			</div>
+		</div>
+	
 	</div>
 </div>
+
+<div class="video-player" id="videoPlayer">
+	<video width="100%" controls autoplay id="myVideo">
+		<source src="internet.mp4" type="video/mp4">
+	</video>
+	<img src="close.png" class="close-btn" onclick="stopVideo()">
+</div>
+<script src="button.js"></script>
 </body>
 
 </html>
