@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<script src="menu.js"></script>
-<!-- The overlay -->
 <div id="myNav" class="overlay">
-
-  <!-- Button to close the overlay navigation -->
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-  <!-- Overlay content -->
   <div class="overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+	<a href="index.html">Home</a>
+    <a href="#">Article</a>
+    <a href="video.html">Video</a>
   </div>
-
 </div>
 
-<!-- Use any element to open/show the overlay navigation menu -->
-<span onclick="openNav()">open</span>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<span class="brbig"></span>
+
+<div class="container">
+	<h1>How To Make Video Gallery</h1>
+	<div class="row">
+		<div class="col">
+			<div class="feature-img">
+				<img src="test.png" width="100%">
+			</div>
+		</div>
+	</div>
+</div>
 </body>
 
 </html>
